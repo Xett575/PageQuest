@@ -6,3 +6,5 @@ Review is welcome not only for code but also the english and grammatical sense. 
 Also I'm not that great with java so as of now it runs via the cmd however I think it would be cool to have a window with a picture and then the text caption below with two buttons for the two choices.
 
 Finally if I didn't mention that I'm not super great at java one question I have is that is there anything bad that comes from having it all in one class or one file to break up work load? Just wondering.
+
+Finally I apologize for any formatting weirdness I want a way for it to be semi-easy to read
