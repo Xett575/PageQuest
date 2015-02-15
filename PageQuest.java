@@ -53,15 +53,15 @@ public class PageQuest{
 					String FourAnswerOne = FourScanOne.nextLine();	
 
 							if(FourAnswerOne.equals("one")){       //You try to defend your lie
-									System.out.println(" ");
-									System.out.println("You're ashamed at the men and start to defend your story.");
-									System.out.println("Before you get too invested however the man in charge halts your progress.");
-									System.out.println("'Hold up there kid.' he says to you a little annoyed.");
-									System.out.println("'I've met a few story tellers in my time and I don't want you to end up like they did so soon.'");
-									System.out.println("'I'm gonna give you a minute to start over and if we think you're leading us off at all we'll drop you like a toothpick.'");
-									System.out.println(" ");
-									System.out.println("1. Tell them the truth.");
-									System.out.println("2. YOU CAN'T HANDLE THE TRUTH!");
+								System.out.println(" ");
+								System.out.println("You're ashamed at the men and start to defend your story.");
+								System.out.println("Before you get too invested however the man in charge halts your progress.");
+								System.out.println("'Hold up there kid.' he says to you a little annoyed.");
+								System.out.println("'I've met a few story tellers in my time and I don't want you to end up like they did so soon.'");
+								System.out.println("'I'm gonna give you a minute to start over and if we think you're leading us off at all we'll drop you like a toothpick.'");
+								System.out.println(" ");
+								System.out.println("1. Tell them the truth.");
+								System.out.println("2. YOU CAN'T HANDLE THE TRUTH!");
 									
 									
 								}
@@ -87,13 +87,14 @@ public class PageQuest{
 					String FourAnswerTwo = FourScanTwo.nextLine();
 
 							if(FourAnswerTwo.equals("one")){    //Defend the 'American' dream
-									System.out.println(" ");
-									System.out.println("You try to convince the men that anyone can make a life for themselves.");
-									System.out.println("While you are trying to spit something out about hard work and dreams one of the men interrupts you.");
-									System.out.println(" 'Look here kid. The only hard work you'll be doing is under the foot of an overseer.' ");
-									System.out.println("Some of the other men start to say things as well and you are slightly overwhelmed by all the information. ");
-									System.out.println("1. Listen to what the men have to say.");
-									System.out.println("2. What's an overseer?");
+								System.out.println(" ");
+								System.out.println("You try to convince the men that anyone can make a life for themselves.");
+								System.out.println("While you are trying to spit something out about hard work and dreams one of the men interrupts you.");
+								System.out.println(" 'Look here kid. The only hard work you'll be doing is under the foot of an overseer.' ");
+								System.out.println("Some of the other men start to say things as well and you are slightly overwhelmed by all the information. ");
+								System.out.println("1. Listen to what the men have to say.");
+								System.out.println("2. What's an overseer?");
+								
 								}
 							else if(FourAnswerTwo.equals("two")){   //Inquire about the men's knowledge
 								System.out.println(" ");
@@ -116,6 +117,7 @@ public class PageQuest{
 								System.out.println(" ");
 								System.out.println("1. Thank you for the offer but I think you have the wrong man. ");
 								System.out.println("2. Ha Where do I sign up!");
+								
 							}
 					}
 			}
