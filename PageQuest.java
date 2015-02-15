@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TestTextGame{
+public class PageQuest{
 
 	public static void main(String[] args){
 
