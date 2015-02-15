@@ -525,7 +525,7 @@ public class PageQuest{
 																						System.out.println("2. Push the bed against the door.");
 																						
 																						Scanner SevenScanFour = new Scanner(System.in);
-																						String SevenAnswerFour = SevenScanThree.nextLine();
+																						String SevenAnswerFour = SevenScanFour.nextLine();
 																						
 																								if(SevenAnswerFour.equals("one")){//Lean the chair against the door
 																										System.out.println(" ");
@@ -537,7 +537,7 @@ public class PageQuest{
 																										System.out.println("2. Try to find something to eat.");
 																										
 																										Scanner EightScanFive = new Scanner(System.in);
-																										String EightAnswerFive = EightScanThree.nextLine();
+																										String EightAnswerFive = EightScanFive.nextLine();
 																										
 																												if(EightAnswerFive.equals("one")){//Try to sleep
 																														System.out.println(" ");
@@ -561,7 +561,7 @@ public class PageQuest{
 																										System.out.println("1. Try to sleep.");
 																										System.out.println("2. Try to find something to eat.");
 																										
-																										Scanner EightScanSix = new Scanner.nextLine();
+																										Scanner EightScanSix = new Scanner(System.in);
 																										String EightAnswerSix = EightScanSix.nextLine();
 																										
 																												if(EightAnswerSix.equals("one")){//Try to sleep
@@ -583,7 +583,7 @@ public class PageQuest{
 																	}
 																else if(FiveAnswerThree.equals("two")){ //Demand a different room
 																		System.out.println(" ");
-																		System.out.println("To think you paid 20 whole farths for this!");
+																		System.out.println("To think you would have paid 20 whole farths for this!");
 																		System.out.println("You walk down the hall and open the door back to the gathering area.");
 																		System.out.println("You are about to turn to the counter when you notice the men who were once rowdy are now standing up and almost shouting.");
 																		System.out.println("You look around at the other travelers each wearing a face of concern.");
@@ -618,7 +618,7 @@ public class PageQuest{
 																	}
 													}
 												else if(FourAnswerTwo.equals("two")){ //You walk towards the group of men
-														Sysem.out.println(" ");
+														System.out.println(" ");
 														System.out.println("You decide to approach the men and see what all the noise is about.");
 														System.out.println("While making your way across the room there is another swell in there volume and you question if there voices are pleasant ones.");
 														System.out.println("1. Keep your course for the table.");
