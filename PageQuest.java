@@ -123,8 +123,9 @@ public class PageQuest{
 		else if(TwoAnswer.equals("two")){ // Beginning of game you walk towards the counter
 			System.out.println(" ");
 			System.out.println("You walk towards the counter motioning to the hostess.");
-			System.out.println("After requesting a simple room she informs you that they have a vacancy and that it will cost 20cliks");
-			System.out.println("1. Pay the 20clicks.");
+			System.out.println("After requesting a simple room she informs you that they have a vacancy and that it will cost 20 farths");
+			System.out.println("Farths is a unit of currency.");
+			System.out.println("1. Pay the 20.");
 			System.out.println("2. 'I only have 15.' ");
 
 			Scanner ThreeScanTwo = new Scanner(System.in);
@@ -132,7 +133,7 @@ public class PageQuest{
 				
 				if(ThreeAnswerTwo.equals("one")){  //You pay full price
 					System.out.println(" ");
-					System.out.println("You hand over the 20cliks and the hostess hands you a key with the faded number 13 on it");
+					System.out.println("You hand over 20 farths and the hostess hands you a key with the faded number 13 on it");
 					System.out.println("You head over to the stairs to go to your room and look back at the gathering area.");
 					System.out.println("1. Go to your room to get some sleep.");
 					System.out.println("2. Take a second look around.");
@@ -141,6 +142,7 @@ public class PageQuest{
 					String FourAnswerOne = FourScanOne.nextLine();
 						
 						if(FourAnswerOne.equals("one")){ //You ignore the gathering area and go to sleep
+								System.out.println("");
 								System.out.println("You decide that sleep is more important than socializing and go to your room.");
 								System.out.println("You make your way to the hall where the rooms are located and find number 13.");
 								System.out.println("You unlock the door and notice that the key jiggles a little bit when in the lock.");
@@ -148,7 +150,51 @@ public class PageQuest{
 								System.out.println("1. Ignore the lock and go in.");
 								System.out.println("2. Go back to the counter and demand a different room.");
 								
-							}
+								Scanner FiveScanOne = new Scanner(System.in);
+								String FiveAnswerOne = FiveScanOne.nextLine();
+								
+									if(FiveAnswerOne.equals("one")){
+											System.out.println(" ");
+											System.out.pritnln("You choose to ignore the mediocre lock and enter the room.");
+											System.out.println("When you open the door your nostrils are hit with the mix of disgust and nostalgia as you smell the dust and coziness of the room.");
+											System.out.println("On the left side against the wall there is a simple bed with only a thin sheet covering a beaten mattress on top of an even older wood frame.");
+											System.out.println("On the other side you notice a small desk with a dirty mirror");
+											System.out.println(" ");
+											System.out.println("1. Investigate the room further.");
+											System.out.println("2. Do something about the door.");
+											
+											Scanner SixScanOne = new Scanner(System.in);
+											String SixAnswerOne = SixScanOne.nextLine();
+													
+													if(SixAnswerOne.equals("one")){
+															System.out.println("");
+															System.out.println("You shut the door and walk into the room now seeing it in its entirety.");
+															System.out.println("You set your supplies down by the bed and stand in a moment of thought.");
+															System.out.println(" ");
+															System.out.println("1. I'm tired. See y'all in the morning. ");
+															System.out.println("2. I'm hungry. I wonder if they server meals in the gathering area.");
+														}
+													else if(SixAnswerOne.equals("two")){
+															System.out.println(" ");
+															System.out.println("You think of what you could do to the door to get a little more privacy.");
+															System.out.println("You look around the room and think of the desk chair or the bed.");
+															System.out.println(" ");
+															System.out.println("1. Lean the chair under the door handle.");
+															System.out.println("2. Push the bed against the door.");
+														}
+											
+										}
+									else if(FiveAnswerOne.equals("two")){
+											System.out.println(" ");
+											System.out.println("To think you paid 20 whole farths for this!");
+											System.out.println("You walk down the hall and open the door back to the gathering area.");
+											System.out.println("You are about to turn to the counter when you notice the men who were once rowdy are now standing up and almost shouting.");
+											System.out.println("You look around at the other travelers each wearing a face of concern.");
+											System.out.println(" ");
+											System.out.println("1. Maybe I don't need a different room.");
+											System.out.println("2. Who cares about those guys I want a different room!");
+											
+										}
 						else if(FourAnswerOne.equals("two")){ //You take a second look at the gathering area
 							System.out.println("You turn around and examine the gathering area closer.");
 							System.out.println("On the far side there is a table surrounded by loud slightly drunk men and scatter through out are some folk who are trying to keep their distance");
