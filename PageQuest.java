@@ -1,3 +1,5 @@
+import java.awt.Desktop;
+import java.io.File;
 import java.util.Scanner;
 
 public class PageQuest{
@@ -27,7 +29,7 @@ public class PageQuest{
 					Scanner TwoScan = new Scanner(System.in);
 					String TwoAnswer = TwoScan.nextLine();
 	
-							if(TwoAnswer.equals("one")){                //See what the men are up to
+							if(TwoAnswer.equals("one")){             //See what the men are up to
 									System.out.println(" ");
 									System.out.println("You approach the table of men with the face of a newcomer.");
 									System.out.println("One of the men see you and asks you in a gruff voice 'Whatcha lookin' at' ");
@@ -62,6 +64,16 @@ public class PageQuest{
 																	System.out.println(" ");
 																	System.out.println("1. Tell them the truth.");
 																	System.out.println("2. YOU CAN'T HANDLE THE TRUTH!");
+																	
+																	Scanner FiveScanOne = new Scanner(System.in);
+																	String FiveAnswerOne = FiveScanOne.nextLine();
+																	
+																			if(FiveAnswerOne.equals("one")){
+																				System.out.println("First choice");	
+																			}
+																			else if(FiveAnswerOne.equals("two")){
+																				System.out.println("choice two");
+																			}
 									
 									
 																}
@@ -297,34 +309,8 @@ public class PageQuest{
 																					String SevenAnswerOne = SevenScanOne.nextLine();
 														
 																							if(SevenAnswerOne.equals("one")){ //Investigate the room
-																									System.out.println("");
-																									System.out.println("You shut the door and walk into the room now seeing it in its entirety.");
-																									System.out.println("You set your supplies down by the bed and stand in a moment of thought.");
-																									System.out.println(" ");
-																									System.out.println("1. I'm tired. See y'all in the morning. ");
-																									System.out.println("2. I'm hungry. I wonder if they server meals in the gathering area.");
-																									
-																									Scanner EightScanOne = new Scanner(System.in);
-																									String EightAnswerOne = EightScanOne.nextLine();
-																		
-																											if(EightAnswerOne.equals("one")){ //Go to sleep
-																													System.out.println(" ");
-																													System.out.println("You lie down on the bed and try to go to sleep.");
-																													System.out.println("1. Sleep. ");
-																													System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");
-													
-																						
-																												}	
-																											else if(EightAnswerOne.equals("two")){ // Get some food
-																													System.out.println(" ");
-																													System.out.println("Your stomach growls at you to feed it, and you give in.");
-																													System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																													System.out.println(" ");
-																													System.out.println("1. Check your bag for food.");
-																													System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																						
-																						
-																												}		
+																									SevenChoiceOneTrue SevenChoiceOneTrueObject = new SevenChoiceOneTrue();
+																									SevenChoiceOneTrueObject.InvestigateRoom();
 																								}
 																							else if(SevenAnswerOne.equals("two")){ //Do something about the door
 																									System.out.println(" ");
@@ -338,57 +324,12 @@ public class PageQuest{
 																									String EightAnswerTwo = EightScanTwo.nextLine();
 																		
 																											if(EightAnswerTwo.equals("one")){ //Lean the chair against the door
-																													System.out.println(" ");
-																													System.out.println("You take the wooden chair from the desk and prop it against the door underneath the handle.");
-																													System.out.println("It doesn't look like a vault but you figure it's safe enough.");
-																													System.out.println(" ");
-																													System.out.println("You look back at the room and start wondering what to do.");
-																													System.out.println("1. Try to sleep.");
-																													System.out.println("2. Try to find something to eat.");
-																													
-																													Scanner NineScanOne = new Scanner(System.in);
-																													String NineAnswerOne = NineScanOne.nextLine();
-																													
-																															if(NineAnswerOne.equals("one")){ //Go to sleep
-																																	System.out.println(" ");
-																																	System.out.println("You lie down on the bed and try to go to sleep.");
-																																	System.out.println("1. Sleep. ");
-																																	System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");
-
-																																}		
-																															else if(NineAnswerOne.equals("two")){ //Get some food
-																																	System.out.println(" ");
-																																	System.out.println("Your stomach growls at you to feed it, and you give in.");
-																																	System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																																	System.out.println(" ");
-																																	System.out.println("1. Check your bag for food.");
-																																	System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																																}
+																													EightChoiceTwoTrue EightChoiceTwoTrueObject = new EightChoiceTwoTrue();
+																													EightChoiceTwoTrueObject.ChairAgainstDoor();
 																												}		
 																											else if(EightAnswerTwo.equals("two")){ //Push the bed against the door
-																													System.out.println(" ");
-																													System.out.println("It takes you some time to push the bed against the door, but you are rewarded with a sense of security.");
-																													System.out.println("You look back at the room and wonder what to do next.");
-																													System.out.println("1. Try to sleep.");
-																													System.out.println("2. Try to find something to eat.");
-																													
-																													Scanner NineScanTwo = new Scanner(System.in);
-																													String NineAnswerTwo = NineScanTwo.nextLine();
-																						
-																															if(NineAnswerTwo.equals("one")){ //Go to sleep
-																																	System.out.println(" ");
-																																	System.out.println("You lie down on the bed and try to go to sleep.");
-																																	System.out.println("1. Sleep. ");
-																																	System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");
-																																}
-																															else if(NineAnswerTwo.equals("two")){ //Get some food
-																																	System.out.println(" ");
-																																	System.out.println("Your stomach growls at you to feed it, and you give in.");
-																																	System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																																	System.out.println(" ");
-																																	System.out.println("1. Check your bag for food.");
-																																	System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																																}
+																													EightChoiceTwoFalse EightChoiceTwoFalseObject = new EightChoiceTwoFalse();
+																													EightChoiceTwoFalseObject.BedAgainstDoor();
 																												}
 																								}
 																				}
@@ -408,11 +349,43 @@ public class PageQuest{
 																							if(SevenAnswerTwo.equals("one")){ //Go back to your room
 																									System.out.println(" ");
 																									System.out.println("You decide that you'd be safer in your room than down there and slowly back away towards the hall and back to your room.");
-																									System.out.println("You close the door to your room and take note of the noise now coming from downstairs.");
+																									System.out.println("You close the door to your room, take note of the noise now coming from downstairs, and agree that you made the right decision.");
 																									System.out.println("You are finally able to take in the contents of your room.");
 																									System.out.println(" ");
 																									System.out.println("On the left side against the wall there is a simple bed with only a thin sheet covering a beaten mattress on top of an even older wood frame.");
 																									System.out.println("On the other side you notice a small desk with a dirty mirror");
+																									System.out.println("You relax and let yourself think for a moment.");
+																									System.out.println(" ");
+																									System.out.println("1. Investigate the room further.");
+																									System.out.println("2. Do something about the door.");
+																									
+																									Scanner EightScanThree = new Scanner(System.in);
+																									String EightAnswerThree = EightScanThree.nextLine();
+																									
+																											if(EightAnswerThree.equals("one")){ //investigate the room
+																												SevenChoiceOneTrue SevenChoiceOneTrueObject = new SevenChoiceOneTrue();
+																												SevenChoiceOneTrueObject.InvestigateRoom();
+																											}
+																											else if(EightAnswerThree.equals("two")){ //Do something about the door
+																												System.out.println(" ");
+																												System.out.println("You think of what you could do to the door to get a little more privacy.");
+																												System.out.println("You look around the room and think of the desk chair or the bed.");
+																												System.out.println(" ");
+																												System.out.println("1. Lean the chair under the door handle.");
+																												System.out.println("2. Push the bed against the door.");
+																												
+																												Scanner NineScanThree = new Scanner(System.in);
+																												String NineAnswerThree = NineScaneThree.nextLine();
+																												
+																														if(NineAnswerThree.equals("one")){ //Chair Against Door
+																															EightChoiceTwoTrue EightChoiceTwoTrueObject = new EightChoiceTwoTrue();
+																															EightChoiceTwoTrueObject.ChairAgainstDoor();
+																														}
+																														else if(NineAnswerThree.equals("two")){ //Bed Against Door
+																															EightChoiceTwoFalse EightChoiceTwoFalseObject = new EightChoiceTwoFalse();
+																															EightChoiceTwoFalseObject.BedAgainstDoor();
+																														}
+																											}
 																								}
 																							else if(SevenAnswerTwo.equals("two")){//Continue to the counter
 																									System.out.println(" ");
@@ -490,31 +463,8 @@ public class PageQuest{
 																		String SixAnswerThree = SixScanThree.nextLine();
 																		
 																				if(SixAnswerThree.equals("one")){ //Investigate the room
-																						System.out.println("");
-																						System.out.println("You shut the door and walk into the room now seeing it in its entirety.");
-																						System.out.println("You set your supplies down by the bed and stand in a moment of thought.");
-																						System.out.println(" ");
-																						System.out.println("1. I'm tired. See y'all in the morning. ");
-																						System.out.println("2. I'm hungry. I wonder if they server meals in the gathering area.");
-																						
-																						Scanner SevenScanThree = new Scanner(System.in);
-																						String SevenAnswerThree = SevenScanThree.nextLine();
-																						
-																								if(SevenAnswerThree.equals("one")){ //Go to sleep
-																										System.out.println(" ");
-																										System.out.println("You lie down on the bed and try to go to sleep.");
-																										System.out.println("1. Sleep. ");
-																										System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");
-										
-																									}
-																								else if(SevenAnswerThree.equals("two")){ //get food
-																										System.out.println(" ");
-																										System.out.println("Your stomach growls at you to feed it, and you give in.");
-																										System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																										System.out.println(" ");
-																										System.out.println("1. Check your bag for food.");
-																										System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																									}
+																						SevenChoiceOneTrue SevenChoiceOneTrueObject = new SevenChoiceOneTrue();
+																						SevenChoiceOneTrueObject.InvestigateRoom();
 																					}
 																				else if(SixAnswerThree.equals("two")){ //Do something about the door.
 																						System.out.println(" ");
@@ -524,60 +474,16 @@ public class PageQuest{
 																						System.out.println("1. Lean the chair under the door handle.");
 																						System.out.println("2. Push the bed against the door.");
 																						
-																						Scanner SevenScanFour = new Scanner(System.in);
-																						String SevenAnswerFour = SevenScanFour.nextLine();
+																						Scanner SevenScanThree = new Scanner(System.in);
+																						String SevenAnswerThree = SevenScanThree.nextLine();
 																						
-																								if(SevenAnswerFour.equals("one")){//Lean the chair against the door
-																										System.out.println(" ");
-																										System.out.println("You take the wooden chair from the desk and prop it against the door underneath the handle.");
-																										System.out.println("It doesn't look like a vault but you figure it's safe enough.");
-																										System.out.println(" ");
-																										System.out.println("You look back at the room and start wondering what to do.");
-																										System.out.println("1. Try to sleep.");
-																										System.out.println("2. Try to find something to eat.");
-																										
-																										Scanner EightScanFive = new Scanner(System.in);
-																										String EightAnswerFive = EightScanFive.nextLine();
-																										
-																												if(EightAnswerFive.equals("one")){//Try to sleep
-																														System.out.println(" ");
-																														System.out.println("You lie down on the bed and try to go to sleep.");
-																														System.out.println("1. Sleep. ");
-																														System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");
-																													}
-																												else if(EightAnswerFive.equals("two")){//Find something to eat
-																														System.out.println(" ");
-																														System.out.println("Your stomach growls at you to feed it, and you give in.");
-																														System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																														System.out.println(" ");
-																														System.out.println("1. Check your bag for food.");
-																														System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																													}
+																								if(SevenAnswerThree.equals("one")){//Lean the chair against the door
+																										EightChoiceTwoTrue EightChoiceTwoTrueObject = new EightChoiceTwoTrue();
+																										EightChoiceTwoTrueObject.ChairAgainstDoor();
 																									}
-																								else if(SevenAnswerFour.equals("two")){//Push the bed against the door
-																										System.out.println(" ");
-																										System.out.println("It takes you some time to push the bed against the door, but you are rewarded with a sense of security.");
-																										System.out.println("You look back at the room and wonder what to do next.");
-																										System.out.println("1. Try to sleep.");
-																										System.out.println("2. Try to find something to eat.");
-																										
-																										Scanner EightScanSix = new Scanner(System.in);
-																										String EightAnswerSix = EightScanSix.nextLine();
-																										
-																												if(EightAnswerSix.equals("one")){//Try to sleep
-																														System.out.println(" ");
-																														System.out.println("You lie down on the bed and try to go to sleep.");
-																														System.out.println("1. Sleep. ");
-																														System.out.println("2. Lie on the bed pretending you're a sleep but you're actually awake listening and thinking and growing more tired.");																										
-																													}
-																												else if(EightAnswerSix.equals("two")){//Find something to eat
-																														System.out.println(" ");
-																														System.out.println("Your stomach growls at you to feed it, and you give in.");
-																														System.out.println("You can't remember if you still have food in your bag or if you should just try the counter downstairs.");
-																														System.out.println(" ");
-																														System.out.println("1. Check your bag for food.");
-																														System.out.println("2. Don't bother looking in the bag and go downstairs.");
-																													}
+																								else if(SevenAnswerThree.equals("two")){//Push the bed against the door
+																										EightChoiceTwoFalse EightChoiceTwoFalseObject = new EightChoiceTwoFalse();
+																										EightChoiceTwoFalseObject.BedAgainstDoor();
 																									}
 																					}
 																	}
@@ -602,6 +508,36 @@ public class PageQuest{
 																						System.out.println(" ");
 																						System.out.println("On the left side against the wall there is a simple bed with only a thin sheet covering a beaten mattress on top of an even older wood frame.");
 																						System.out.println("On the other side you notice a small desk with a dirty mirror");
+																						System.out.println("1. Investigate the room further.");
+																						System.out.println("2. Do something about the door.");
+																						
+																						Scanner SevenScanFour = new Scanner(System.in);
+																						String SevenAnswerFour = SevenScanFour.nextLine();
+																						
+																							if(SevenAnswerFour.equals("one")){ //Investigate the room
+																								SevenChoiceOneTrue SevenChoiceOneTrueObject = new SevenChoiceOneTrue();
+																								SevenChoiceOneTrueObject.InvestigateRoom();
+																							}
+																							else if(SevenAnswerFour.equals("two")){ //Do something about the door
+																								System.out.println(" ");
+																								System.out.println("You think of what you could do to the door to get a little more privacy.");
+																								System.out.println("You look around the room and think of the desk chair or the bed.");
+																								System.out.println(" ");
+																								System.out.println("1. Lean the chair under the door handle.");
+																								System.out.println("2. Push the bed against the door.");
+																								
+																								Scanner EightScanFour = new Scanner(System.in);
+																								String EightAnswerFour = EightScanFour.nextLine();
+																								
+																									if(EightAnswerFour.equals("one")){ //Chair against door
+																										EightChoiceTwoTrue EightChoiceTwoTrueObject = new EightChoiceTwoTrue();
+																										EightChoiceTwoTrueObject.ChairAgainstDoor();
+																									}
+																									else if(EightAnswerFour.equals("two")){ //Bed against door
+																										EightChoiceTwoFalse EightChoiceTwoFalseObject = new EightChoiceTwoFalse();
+																										EightChoiceTwoFalseObject.BedAgainstDoor();
+																									}
+																							}
 																					}
 																				else if(SixAnswerThree.equals("two")){//Continue to the counter
 																						System.out.println(" ");
@@ -631,20 +567,7 @@ public class PageQuest{
         }
         else if(answer.equals("two")){  //You chose not to play the game weirdo
             System.out.println(" ");
-			System.out.println("You have made your choice. Farewell.");
-			System.out.println(" ");	
-			System.out.println("Do you wish to try again?");
-			System.out.println("Reply with a yes or no.");
-				
-				Scanner ScanTwo = new Scanner(System.in);
-				String AnswerTwo = ScanTwo.nextLine();
-				
-					if(AnswerTwo.equals("yes")){
-						System.out.println("Please start the program again using the java file-name method in command prompt.");
-					}
-					else if(AnswerTwo.equals("no")){
-						System.out.println("Goodbye.");
-					}
-		}
+			System.out.println("You have made your choice. Farewell.");				
+			}
     }
   }
