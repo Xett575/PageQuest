@@ -31,7 +31,7 @@ public class EightChoiceTwoTrue{
 										System.out.println("END DAY ONE.");
 										System.out.println(" ");
 										System.out.println("1. Continue your adventure?");
-										System.out.println(" ");
+										System.out.println("2. Pause for the moment.");
 								}
 								else if(TenAnswerOne.equals("two")){ //Pretend sleep
 										System.out.println(" ");
