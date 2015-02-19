@@ -55,6 +55,19 @@ public class SevenChoiceOneTrue{
                                                                         System.out.println("1. Eat the Rations.");
                                                                         System.out.println("2. I'll try downstairs.");
                                                                         System.out.println("3. Maybe I don't need to eat");
+                                                                        
+                                                                        Scanner TenScanOne = new Scanner(System.in);
+                                                                        String TenAnswerOne = TenScanOne.nextLine();
+                                                                        
+                                                                               if(TenAnswerOne.equals("one")){
+                                                                               
+                                                                                }
+                                                                               else if(TenAnswerOne.equals("two")){
+                                                                               
+                                                                                }
+                                                                               else{
+                                                                               
+                                                                                }
                                                                     }
                                                                 else if(NineAnswerTwo.equals("two")){ //Go downstairs
                                                                         System.out.println("");
@@ -64,6 +77,16 @@ public class SevenChoiceOneTrue{
                                                                         System.out.println("");
                                                                         System.out.println("1. open the door a crack and peek in.");
                                                                         System.out.println("2. Burst through and save someone whether they like it or not.");
+                                                                        
+                                                                        Scanner TenScanTwo = new Scanner(System.in);
+                                                                        String TenAnswerTwo = TenScanTwo.nextLine();
+                                                                        
+                                                                               if(TenAnswerTwo.equals("one")){
+                                                                                
+                                                                                }
+                                                                               else if(TenAnswerTwo.equals("two")){
+                                                                                
+                                                                                }
                                                                     }
 						}		
 	}
