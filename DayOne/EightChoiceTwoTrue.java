@@ -50,10 +50,34 @@ public class EightChoiceTwoTrue{
 						String TenAnswerTwo = TenScanTwo.nextLine();
 						
 								if(TenAnswerTwo.equals("one")){ //Check your bag
-									
+									System.out.println("");
+                                                                        System.out.println("You wander over to your rugged backpack and search for some type of food.");
+                                                                        System.out.println("After a little search you find a bag of left over rations or what ever they used to be.");
+                                                                        System.out.println("1. Eat the Rations.");
+                                                                        System.out.println("2. I'll try downstairs.");
+                                                                        System.out.println("3. Maybe I don't need to eat");
+                                                                        
+                                                                        Scanner ElevenScanOne = new Scanner(System.in);
+                                                                        String ElevenAnswerOne = ElevenScanOne.nextLine();
+                                                                        
+                                                                                if(ElevenAnswerOne.equals("one")){
+                                                                               
+                                                                                }
+                                                                               else if(ElevenAnswerOne.equals("two")){
+                                                                               
+                                                                                }
+                                                                               else{
+                                                                               
+                                                                                }
 								}
 								else if(TenAnswerTwo.equals("two")){ //Just go downstairs
-									
+									System.out.println("");
+                                                                        System.out.println("You decide that looking through your pack would be too much time and there would be anything good.");
+                                                                        System.out.println("You enter the hallway once again and descend to the gathering area");
+                                                                        System.out.println("You go to open the door when you notice how loud it is in there.");
+                                                                        System.out.println("");
+                                                                        System.out.println("1. open the door a crack and peek in.");
+                                                                        System.out.println("2. Burst through and save someone whether they like it or not.");
 								}
 					}
 		}
