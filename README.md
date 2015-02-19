@@ -11,7 +11,9 @@ Also nest switches are just as bad as ifs
 Finally if I didn't mention that I'm not super great at java one question I have is that is there anything bad that comes from having it all in one class or one file to break up work load? Just wondering.
 
 Finally I apologize for any formatting weirdness I want a way for it to be semi-easy to read
+
 **This is a little important if you want to understand the soure**
+
 If you're looking at the source the method to naming variable goes likes this
 [Number of choice][Scanner or String][Version of choice]
 So for the fifth choice you make and whether you choose option one or two you'll get FiveScanOne/FiveScanTwo or FiveAnswerOne/FiveAnsewrTwo depending on which part you're reading.
