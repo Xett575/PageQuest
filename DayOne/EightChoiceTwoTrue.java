@@ -66,7 +66,7 @@ public class EightChoiceTwoTrue{
                                                                                 }
                                                                                else if(ElevenAnswerOne.equals("two")){ // Try downstairs
                                                                                    System.out.println("");
-                                                                                   System.out.println("You put the rations back into your pack and relief the chiar of it's duties.");
+                                                                                   System.out.println("You put the rations back into your pack and relieve the chiar of it's guard duties.");
                                                                                    System.out.println("You enter the hall and head back to the gathering area.");
                                                                                 }
                                                                                else{ //Don't eat
@@ -79,12 +79,33 @@ public class EightChoiceTwoTrue{
 								}
 								else if(TenAnswerTwo.equals("two")){ //Just go downstairs
 									System.out.println("");
-                                                                        System.out.println("You decide that looking through your pack would be too much time and there would be anything good.");
-                                                                        System.out.println("You enter the hallway once again and descend to the gathering area");
-                                                                        System.out.println("You go to open the door when you notice how loud it is in there.");
+                                                                        System.out.println("You head towards the door and relieve the chiar of it's guard duties.");
+                                                                        System.out.println("When you enter the hall and appraoch the entrance to the gathering area you notice that it is extremly loud now.");
                                                                         System.out.println("");
                                                                         System.out.println("1. open the door a crack and peek in.");
-                                                                        System.out.println("2. Burst through and save someone whether they like it or not.");
+                                                                        System.out.println("2. Burst through and save someone whether they like it or not!");
+                                                                        
+                                                                        Scanner ElevenScanTwo = new Scanner(System.in);
+                                                                        String ElevenAnswerTwo = ElevenScanTwo.nextLine();
+                                                                            
+                                                                                if(ElevenAnswerTwo.equals("one")){
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You slowly go for the door handle and twist at a turtle's pace.");
+                                                                                   System.out.println("Through the sliver you create you can see the men that were once only loud and rowdy are now all out fighting.");
+                                                                                   System.out.println("The other customs including the hostess have all taken cover and are trying not to make any sudden movements.");
+                                                                                   System.out.println("");
+                                                                                   System.out.println("1. Join in and attempt to subdue the men.");
+                                                                                   System.out.println("2. Queitly close the door and go back to your room.");
+                                                                                    }
+                                                                                else if(ElevenAnswerTwo.equals("two")){
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You burst through the door and try to find something to do.");
+                                                                                   System.out.println("You are quickly jolted out of your thinking by the sound of bullets going off inside the inn.");
+                                                                                   System.out.println("You duck down to take cover and gather your thoughts.");
+                                                                                   System.out.println("");
+                                                                                   System.out.println("1. Stand up and tell the men to take it outside.");
+                                                                                   System.out.println("2. Make your way back to hall and back to your room.");
+                                                                                    }
 								}
 					}
 		}

@@ -89,8 +89,8 @@ public class SevenChoiceOneTrue{
                                                                         
                                                                                if(TenAnswerTwo.equals("one")){
                                                                                    System.out.println("");
-                                                                                   System.out.println("You slow go for the door handle and twist at a turtle's pace.");
-                                                                                   System.out.println("Through the key hole you can see the table of men that were once only loud and rowdy now fighting.");
+                                                                                   System.out.println("You slowly go for the door handle and twist at a turtle's pace.");
+                                                                                   System.out.println("Through the sliver you create you can see the men that were once only loud and rowdy are now all out fighting.");
                                                                                    System.out.println("The other customs including the hostess have all taken cover and are trying not to make any sudden movements.");
                                                                                    System.out.println("");
                                                                                    System.out.println("1. Join in and attempt to subdue the men.");
@@ -99,10 +99,10 @@ public class SevenChoiceOneTrue{
                                                                                else if(TenAnswerTwo.equals("two")){
                                                                                    System.out.println("");
                                                                                    System.out.println("You burst through the door and try to find something to do.");
-                                                                                   System.out.println("You are quickly jolted out of your thinking by the sound of bullets going off inside.");
+                                                                                   System.out.println("You are quickly jolted out of your thinking by the sound of bullets going off inside the inn.");
                                                                                    System.out.println("You duck down to take cover and gather your thoughts.");
                                                                                    System.out.println("");
-                                                                                   System.out.println("1. Stand up and tell the men to take it out side.");
+                                                                                   System.out.println("1. Stand up and tell the men to take it outside.");
                                                                                    System.out.println("2. Make your way back to hall and back to your room.");
                                                                                 }
                                                                     }
