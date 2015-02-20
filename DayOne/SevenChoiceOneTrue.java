@@ -59,14 +59,20 @@ public class SevenChoiceOneTrue{
                                                                         Scanner TenScanOne = new Scanner(System.in);
                                                                         String TenAnswerOne = TenScanOne.nextLine();
                                                                         
-                                                                               if(TenAnswerOne.equals("one")){
-                                                                               
+                                                                               if(TenAnswerOne.equals("one")){ //Eat the rations
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You scarf down the remainder of the rations and toss the wrapper.");
                                                                                 }
-                                                                               else if(TenAnswerOne.equals("two")){
-                                                                               
+                                                                               else if(TenAnswerOne.equals("two")){ //Try downstairs
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You put the rations back into your pack and head downstairs to see if you can get a meal");
                                                                                 }
-                                                                               else{
-                                                                               
+                                                                               else{ //Don't eat
+                                                                                   System.out.println("");
+                                                                                   System.out.println("The rations seem to have scared your appetite away.");
+                                                                                   System.out.println("With your hunger suppressed for now you look back at your room.");
+                                                                                   System.out.println("1. The bed looks nice maybe try a snooze");
+                                                                                   System.out.println("2. Explore the room to waste time.");
                                                                                 }
                                                                     }
                                                                 else if(NineAnswerTwo.equals("two")){ //Go downstairs
@@ -75,17 +81,29 @@ public class SevenChoiceOneTrue{
                                                                         System.out.println("You enter the hallway once again and descend to the gathering area");
                                                                         System.out.println("You go to open the door when you notice how loud it is in there.");
                                                                         System.out.println("");
-                                                                        System.out.println("1. open the door a crack and peek in.");
+                                                                        System.out.println("1. Open the door a crack and peek in.");
                                                                         System.out.println("2. Burst through and save someone whether they like it or not.");
                                                                         
                                                                         Scanner TenScanTwo = new Scanner(System.in);
                                                                         String TenAnswerTwo = TenScanTwo.nextLine();
                                                                         
                                                                                if(TenAnswerTwo.equals("one")){
-                                                                                
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You slow go for the door handle and twist at a turtle's pace.");
+                                                                                   System.out.println("Through the key hole you can see the table of men that were once only loud and rowdy now fighting.");
+                                                                                   System.out.println("The other customs including the hostess have all taken cover and are trying not to make any sudden movements.");
+                                                                                   System.out.println("");
+                                                                                   System.out.println("1. Join in and attempt to subdue the men.");
+                                                                                   System.out.println("2. Queitly close the door and go back to your room.");
                                                                                 }
                                                                                else if(TenAnswerTwo.equals("two")){
-                                                                                
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You burst through the door and try to find something to do.");
+                                                                                   System.out.println("You are quickly jolted out of your thinking by the sound of bullets going off inside.");
+                                                                                   System.out.println("You duck down to take cover and gather your thoughts.");
+                                                                                   System.out.println("");
+                                                                                   System.out.println("1. Stand up and tell the men to take it out side.");
+                                                                                   System.out.println("2. Make your way back to hall and back to your room.");
                                                                                 }
                                                                     }
 						}		

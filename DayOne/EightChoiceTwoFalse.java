@@ -22,6 +22,19 @@ public class EightChoiceTwoFalse{
                                         Scanner TenScanOne = new Scanner(System.in);
                                         String TenAnswerOne = TenScanOne.nextLine();
                                                 
+                                                if(TenAnswerOne.equals("one")){ //Go to sleep for real
+                                                    System.out.println(" ");
+                                                    System.out.println("You close your eyes and try to fall asleep in this little room far from the place you used to call your home.");
+                                                    System.out.println("With the thoughts of endless possibilities on your mind you finally fall asleep...");
+                                                    System.out.println("END DAY ONE.");
+                                                    System.out.println(" ");
+                                                    System.out.println("1. Continue your adventure?");
+                                                    System.out.println("2. Pause for the moment.");
+                                                    }
+                                                else if(TenAnswerOne.equals("two")){ //Fake sleep
+                                                    System.out.println(" ");
+                                                    System.out.println("You lie awake lying to yourself about going to sleep");
+                                                    }
                                                 
 					}
 				else if(NineAnswerTwo.equals("two")){ //Get some food
@@ -35,22 +48,54 @@ public class EightChoiceTwoFalse{
                                         Scanner TenScanTwo = new Scanner(System.in);
                                         String TenAnswerTwo = TenScanTwo.nextLine();
                                                 
-                                                if(TenAnswerTwo.equals("one")){
+                                                if(TenAnswerTwo.equals("one")){ //Check your bag for food
                                                         System.out.println("");
                                                         System.out.println("You wander over to your rugged backpack and search for some type of food.");
                                                         System.out.println("After a little search you find a bag of left over rations or what ever they used to be.");
                                                         System.out.println("1. Eat the Rations.");
                                                         System.out.println("2. I'll try downstairs.");
                                                         System.out.println("3. Maybe I don't need to eat");
+                                                        
+                                                        Scanner ElevenScanThree = new Scanner(System.in);
+                                                        String ElevenAnswerThree = ElevenScanThree.nextLine();
+                                                        
+                                                            if(ElevenAnswerThree.equals("one")){ //Eat the rations
+                                                                System.out.println("");
+                                                                System.out.println("You scarf down the remainder of the rations and toss the wrapper.");
+                                                             }
+                                                            else if(ElevenAnswerThree.equals("two")){ //Try downstairs
+                                                                System.out.println("");
+                                                                System.out.println("You are about to go to the hall when you realize yo've pushed your bed in front of the door.");
+                                                                System.out.println("You stop and contemplate whether you should move the bed or not.");
+                                                                System.out.println("");
+                                                                System.out.println("1. Pull the bed back out of the way to get to the hall.");
+                                                                System.out.println("2. Forget it and find something else to do.");
+                                                             }
+                                                            else{ //Don't eat
+                                                                System.out.println("");
+                                                                System.out.println("The rations seem to have scared your appetite away.");
+                                                                System.out.println("With your hunger suppressed for now you look back at your room.");
+                                                                System.out.println("1. The bed looks nice maybe try a snooze");
+                                                                System.out.println("2. Explore the room to waste time.");
+                                                             }
                                                     }
-                                                else if(TenAnswerTwo.equals("two")){
+                                                else if(TenAnswerTwo.equals("two")){ //Skip your bag and go down stairs
                                                         System.out.println("");
-                                                        System.out.println("You decide that looking through your pack would be too much time and there would be anything good.");
-                                                        System.out.println("You enter the hallway once again and descend to the gathering area");
-                                                        System.out.println("You go to open the door when you notice how loud it is in there.");
+                                                        System.out.println("You are about to go to the hall when you realize yo've pushed your bed in front of the door.");
+                                                        System.out.println("You stop and contemplate whether you should move the bed or not.");
                                                         System.out.println("");
-                                                        System.out.println("1. open the door a crack and peek in.");
-                                                        System.out.println("2. Burst through and save someone whether they like it or not.");
+                                                        System.out.println("1. Pull the bed back out of the way to get to the hall.");
+                                                        System.out.println("2. Forget it and find something else to do.");
+                                                        
+                                                        Scanner ElevenScanFour = new Scanner(System.in);
+                                                        String ElevenAnswerFour = ElevenScanFour.nextLine();
+                                                        
+                                                                if(ElevenAnswerFour.equals("one")){ //Pull the bed pack
+                                                                     System.out.println("");
+                                                                    }
+                                                                else if(ElevenAnswerFour.equals("two")){ //Forget about it
+                                                                     System.out.println("");
+                                                                    }
                                                 }
 
 					}

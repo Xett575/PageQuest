@@ -381,16 +381,12 @@ public class PageQuest{
 																		String SixAnswerOne = SixScanOne.nextLine();
 											
 																				if(SixAnswerOne.equals("one")){ //opposite shouting men
-																						System.out.println(" ");
-																						System.out.println("You decide not to take any chances and wander over to the opposite side.");
-																						System.out.println("There's a few people scattered toward the wall each at their own table and some man is sitting at the piano playing a gentle evening tune.");
-																						System.out.println(" ");
+                                                                                                                                                                        FiveChoiceTwoTrue FiveChoiceTwoTrueObject = new FiveChoiceTwoTrue();
+                                                                                                                                                                        FiveChoiceTwoTrueObject.SideOppositeMen();
 																					}
 																				else if(SixAnswerOne.equals("two")){ //side with the shouting men
-																						System.out.println(" ");
-																						System.out.println("Your curiosity gets the best of you as you wander closer to the loud men.");
-																						System.out.println("Their voices are mixed and it becomes hard to tell if they are yelling at each other or are simple victims of screaming voice syndrome.");
-																						System.out.println(" ");
+                                                                                                                                                                        FiveChoiceTwoFalse FiveChoiceTwoFalseObject = new FiveChoiceTwoFalse();
+                                                                                                                                                                        FiveChoiceTwoFalseObject.SideWithMen();
 																					}
 																	}
 								

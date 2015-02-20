@@ -60,14 +60,21 @@ public class EightChoiceTwoTrue{
                                                                         Scanner ElevenScanOne = new Scanner(System.in);
                                                                         String ElevenAnswerOne = ElevenScanOne.nextLine();
                                                                         
-                                                                                if(ElevenAnswerOne.equals("one")){
-                                                                               
+                                                                                if(ElevenAnswerOne.equals("one")){ //Eat the rations
+                                                                                    System.out.println("");
+                                                                                    System.out.println("You scarf down the remainder of the rations and toss the wrapper.");
                                                                                 }
-                                                                               else if(ElevenAnswerOne.equals("two")){
-                                                                               
+                                                                               else if(ElevenAnswerOne.equals("two")){ // Try downstairs
+                                                                                   System.out.println("");
+                                                                                   System.out.println("You put the rations back into your pack and relief the chiar of it's duties.");
+                                                                                   System.out.println("You enter the hall and head back to the gathering area.");
                                                                                 }
-                                                                               else{
-                                                                               
+                                                                               else{ //Don't eat
+                                                                                   System.out.println("");
+                                                                                   System.out.println("The rations seem to have scared your appetite away.");
+                                                                                   System.out.println("With your hunger suppressed for now you look back at your room.");
+                                                                                   System.out.println("1. The bed looks nice maybe try a snooze");
+                                                                                   System.out.println("2. Explore the room to waste time.");
                                                                                 }
 								}
 								else if(TenAnswerTwo.equals("two")){ //Just go downstairs
