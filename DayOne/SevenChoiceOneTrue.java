@@ -56,14 +56,14 @@ public class SevenChoiceOneTrue{
                                                                         System.out.println("2. I'll try downstairs.");
                                                                         System.out.println("3. Maybe I don't need to eat");
                                                                         
-                                                                        Scanner TenScanOne = new Scanner(System.in);
-                                                                        String TenAnswerOne = TenScanOne.nextLine();
+                                                                        Scanner TenScanThree = new Scanner(System.in);
+                                                                        String TenAnswerThree = TenScanThree.nextLine();
                                                                         
-                                                                               if(TenAnswerOne.equals("one")){ //Eat the rations
+                                                                               if(TenAnswerThree.equals("one")){ //Eat the rations
                                                                                    System.out.println("");
                                                                                    System.out.println("You scarf down the remainder of the rations and toss the wrapper.");
                                                                                 }
-                                                                               else if(TenAnswerOne.equals("two")){ //Try downstairs
+                                                                               else if(TenAnswerThree.equals("two")){ //Try downstairs
                                                                                    System.out.println("");
                                                                                    System.out.println("You put the rations back into your pack and head downstairs to see if you can get a meal");
                                                                                 }
@@ -104,6 +104,16 @@ public class SevenChoiceOneTrue{
                                                                                    System.out.println("");
                                                                                    System.out.println("1. Stand up and tell the men to take it outside.");
                                                                                    System.out.println("2. Make your way back to hall and back to your room.");
+                                                                                   
+                                                                                   Scanner ElevenScanSix = new Scanner(System.in);
+                                                                                   String ElevenAnswerSix = ElevenScanSix.nextLine();
+                                                                                   
+                                                                                   	if(ElevenAnswwerSix.equals("one")){
+                                                                                   		System.out.println("");	
+                                                                                   	}
+                                                                                   	else if(ElevenAnswerSix.equals("two")){
+                                                                                   		System.out.println("");
+                                                                                   	}
                                                                                 }
                                                                     }
 						}		
