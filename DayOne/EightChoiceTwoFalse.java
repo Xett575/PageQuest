@@ -92,8 +92,10 @@ public class EightChoiceTwoFalse{
                                                         
                                                                 if(ElevenAnswerFour.equals("one")){ //Pull the bed pack
                                                                      System.out.println("");
+                                                                     System.out.println("");
                                                                     }
                                                                 else if(ElevenAnswerFour.equals("two")){ //Forget about it
+                                                                     System.out.println("");
                                                                      System.out.println("");
                                                                     }
                                                 }
