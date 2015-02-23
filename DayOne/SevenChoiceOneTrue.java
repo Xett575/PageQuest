@@ -95,6 +95,16 @@ public class SevenChoiceOneTrue{
                                                                                    System.out.println("");
                                                                                    System.out.println("1. Join in and attempt to subdue the men.");
                                                                                    System.out.println("2. Queitly close the door and go back to your room.");
+                                                                                   
+                                                                                   Scanner ElevenScanFive = new Scanner(System.in);
+                                                                                   String ElevenAnswerFive = ElevenScanFive.nextLine();
+                                                                                   
+                                                                                        if(ElevenAnswerFive.equals("one")){ //Attempt to subdue the men
+                                                                                            System.out.println("");
+                                                                                        }
+                                                                                        else if(ElevenAnswerFive.equals("two")){ //Go back to your room
+                                                                                            System.out.println("");
+                                                                                        }
                                                                                 }
                                                                                else if(TenAnswerTwo.equals("two")){
                                                                                    System.out.println("");
@@ -108,10 +118,10 @@ public class SevenChoiceOneTrue{
                                                                                    Scanner ElevenScanSix = new Scanner(System.in);
                                                                                    String ElevenAnswerSix = ElevenScanSix.nextLine();
                                                                                    
-                                                                                   	if(ElevenAnswwerSix.equals("one")){
+                                                                                   	if(ElevenAnswerSix.equals("one")){ //Tell the men to take it outside
                                                                                    		System.out.println("");	
                                                                                    	}
-                                                                                   	else if(ElevenAnswerSix.equals("two")){
+                                                                                   	else if(ElevenAnswerSix.equals("two")){ //Try to get back to your room
                                                                                    		System.out.println("");
                                                                                    	}
                                                                                 }
