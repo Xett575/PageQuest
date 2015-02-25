@@ -156,6 +156,17 @@ public class PageQuest{
 																		System.out.println("1. Thank you for the offer but I think you have the wrong man. ");
 																		System.out.println("2. Ha Where do I sign up!");
 								
+                                                                                                                                                Scanner FiveScanFive = new Scanner(System.in);
+                                                                                                                                                String FiveAnswerFive = FiveScanFive.nextLine();
+                                                                                                                                                
+                                                                                                                                                if(FiveAnswerFive.equals("one")){ //Decline their offer
+                                                                                                                                                    FiveChoiceFiveTrue FiveChoiceFiveTrueObject = new FiveChoiceFiveTrue();
+                                                                                                                                                    FiveChoiceFiveTrueObject.DeclineTheirOffer();
+                                                                                                                                                }
+                                                                                                                                                else if(FiveAnswerFive.equals("two")){ //Take the offer
+                                                                                                                                                    FiveChoiceFiveFalse FiveChoiceFiveFalseObject = new FiveChoiceFiveFalse();
+                                                                                                                                                    FiveChoiceFiveFalseObject.TakeTheOffer();
+                                                                                                                                                }
 																	}		
 								}
 			}
