@@ -1,4 +1,3 @@
-package pagequest;
 
 import java.util.Scanner;
 

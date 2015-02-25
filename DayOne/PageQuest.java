@@ -121,7 +121,18 @@ public class PageQuest{
 																		System.out.println("Some of the other men start to say things as well and you are slightly overwhelmed by all the information. ");
 																		System.out.println("1. Listen to what the men have to say.");
 																		System.out.println("2. What's an overseer?");
-																		
+                                                                                                                                                
+                                                                                                                                                Scanner FiveScanFour = new Scanner(System.in);
+                                                                                                                                                String FiveAnswerFour = FiveScanFour.nextLine(); 
+                                                                                                                                                
+                                                                                                                                                        if(FiveAnswerFour.equals("one")){ //Listen to what the men say
+                                                                                                                                                            FiveChoiceFourTrue FiveChoiceFourTrueObject = new FiveChoiceFourTrue();
+                                                                                                                                                            FiveChoiceFourTrueObject.ListenToTheMen();
+                                                                                                                                                        }
+                                                                                                                                                        else if(FiveAnswerFour.equals("two")){ //What's an overseer
+                                                                                                                                                            FiveChoiceFourFalse FiveChoiceFourFalseObject = new FiveChoiceFourFalse();
+                                                                                                                                                            FiveChoiceFourFalseObject.Overseer();
+                                                                                                                                                        }
 																	}
 																else if(FourAnswerTwo.equals("two")){   //Inquire about the men's knowledge
 																		System.out.println(" ");
