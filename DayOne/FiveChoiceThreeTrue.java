@@ -2,7 +2,7 @@ package pagequest;
 
 import java.util.Scanner;
 
-public class FiveChoiceTwoTrue {
+public class FiveChoiceThreeTrue {
  
     public void SideOppositeMen(){
     

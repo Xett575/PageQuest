@@ -88,6 +88,18 @@ public class PageQuest{
 																	System.out.println(" ");
 																	System.out.println("1. Take a minute to tell them the real story.");
 																	System.out.println("2. Try a different, slightly less intense, story.");
+                                                                                                                                        
+                                                                                                                                        Scanner FiveScanTwo = new Scanner(System.in);
+                                                                                                                                        String FiveAnswerTwo = FiveScanTwo.nextLine();
+                                                                                                                                        
+                                                                                                                                                if(FiveAnswerTwo.equals("one")){
+                                                                                                                                                        FiveChoiceOneTrue FiveChoiceOneTrueObject = new FiveChoiceOneTrue();
+                                                                                                                                                        FiveChoiceOneTrueObject.TellTheTruthSecondTime();
+                                                                                                                                                    }
+                                                                                                                                                else if(FiveAnswerTwo.equals("two")){
+                                                                                                                                                        FiveChoiceTwoFalse FiveChoiceTwoFalseObject = new FiveChoiceTwoFalse();
+                                                                                                                                                        FiveChoiceTwoFalseObject.TellABetterLie();
+                                                                                                                                                }
 																}	
 												}				
 												else if(ThreeAnswerOne.equals("two")){  //Tell your true story
@@ -383,12 +395,12 @@ public class PageQuest{
 																		String SixAnswerOne = SixScanOne.nextLine();
 											
 																				if(SixAnswerOne.equals("one")){ //opposite shouting men
-                                                                                                                                                                        FiveChoiceTwoTrue FiveChoiceTwoTrueObject = new FiveChoiceTwoTrue();
-                                                                                                                                                                        FiveChoiceTwoTrueObject.SideOppositeMen();
+                                                                                                                                                                        FiveChoiceThreeTrue FiveChoiceThreeTrueObject = new FiveChoiceThreeTrue();
+                                                                                                                                                                        FiveChoiceThreeTrueObject.SideOppositeMen();
 																					}
 																				else if(SixAnswerOne.equals("two")){ //side with the shouting men
-                                                                                                                                                                        FiveChoiceTwoFalse FiveChoiceTwoFalseObject = new FiveChoiceTwoFalse();
-                                                                                                                                                                        FiveChoiceTwoFalseObject.SideWithMen();
+                                                                                                                                                                        FiveChoiceThreeFalse FiveChoiceThreeFalseObject = new FiveChoiceTwoFalse();
+                                                                                                                                                                        FiveChoiceThreeFalseObject.SideWithMen();
 																					}
 																	}
 								
