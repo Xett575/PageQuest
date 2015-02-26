@@ -263,6 +263,20 @@ public class PageQuest{
 																						System.out.println(" ");
 																						System.out.println("On the left side against the wall there is a simple bed with only a thin sheet covering a beaten mattress on top of an even older wood frame.");
 																						System.out.println("On the other side you notice a small desk with a dirty mirror");
+                                                                                                                                                                                System.out.println("1. Do something about the door");
+                                                                                                                                                                                System.out.println("2. 'I'm tired how 'bout we look at the bed.' ");
+                                                                                                                                                                                
+                                                                                                                                                                                Scanner SevenScanTwo = new Scanner(System.in);
+                                                                                                                                                                                String SevenAnswerTwo = SevenScanTwo.nextLine();
+                                                                                                                                                                                
+                                                                                                                                                                                        if(SevenAnswerTwo.equals("one")){ //Do something about the door
+                                                                                                                                                                                            SevenChoiceTwoTrue SevenChoiceTwoTrueObject = new SevenChoiceTwoTrue();
+                                                                                                                                                                                            SevenChoiceTwoTrueObject.ExamineTheDoor();
+                                                                                                                                                                                        }
+                                                                                                                                                                                        else if(SevenAnswerTwo.equals("two")){ // Examine the bed
+                                                                                                                                                                                            SevenChoiceTwoFalse SevenChoiceTwoFalseObject = new SevenChoiceTwoFalse();
+                                                                                                                                                                                            SevenChoiceTwoFalseObject.ExamineTheBed();
+                                                                                                                                                                                        }
 																					}
 																				else if(SixAnswerTwo.equals("two")){ //Continue to the counter
 																						System.out.println(" ");
@@ -275,6 +289,18 @@ public class PageQuest{
 																						System.out.println(" ");
 																						System.out.println("1. Pay her for the other room.");
 																						System.out.println("2. 5 extra farths! This is an outrage! Nevermind!");
+                                                                                                                                                                                
+                                                                                                                                                                                Scanner SevenScanThree = new Scanner(System.in);
+                                                                                                                                                                                String SevenAnswerThree = SevenScanThree.nextLine();
+                                                                                                                                                                                
+                                                                                                                                                                                        if(SevenAnswerThree.equals("one")){ //Pay her for an different room
+                                                                                                                                                                                            SevenChoiceThreeTrue SevenChoiceThreeTrueObject = new SevenChoiceThreeTrue();
+                                                                                                                                                                                            SevenChoiceThreeTrueObject.GetDifferentRoom();
+                                                                                                                                                                                        }
+                                                                                                                                                                                        else if(SevenAnswerThree.equals("two")){ //Become Outraged
+                                                                                                                                                                                            SevenChoiceThreeFalse SevenChoiceThreeFalseObject = new SevenChoiceThreeFalse();
+                                                                                                                                                                                            SevenChoiceThreeFalseObject.BecomeOutraged();
+                                                                                                                                                                                        }
 																					}
 																	}
 												}
@@ -403,6 +429,18 @@ public class PageQuest{
 																									System.out.println(" ");
 																									System.out.println("1. Pay her for the other room.");
 																									System.out.println("2. 5 extra farths! This is an outrage! Nevermind!");
+                                                                                                                                                                                                        
+                                                                                                                                                                                                        Scanner EightScanFour = new Scanner(System.in);
+                                                                                                                                                                                                        String EightAnswerFour = EightScanFour.nextLine();
+                                                                                                                                                                                                        
+                                                                                                                                                                                                                if(EightAnswerFour.equals("one")){
+                                                                                                                                                                                                                    SevenChoiceThreeTrue SevenChoiceThreeTrueObject = new SevenChoiceThreeTrue();
+                                                                                                                                                                                                                    SevenChoiceThreeTrueObject.GetDifferentRoom();
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                else if(EightAnswerFour.equals("two")){
+                                                                                                                                                                                                                    SevenChoiceThreeFalse SevenChoiceThreeFalseObject = new SevenChoiceThreeFalse();
+                                                                                                                                                                                                                    SevenChoiceThreeFalseObject.BecomeOutraged();
+                                                                                                                                                                                                                }
 																								}
 																				}
 							
@@ -551,6 +589,18 @@ public class PageQuest{
 																						System.out.println(" ");
 																						System.out.println("1. Pay her for the other room.");
 																						System.out.println("2. 5 extra farths! This is an outrage! Nevermind!");
+                                                                                                                                                                                
+                                                                                                                                                                                Scanner SevenScanSix = new Scanner(System.in);
+                                                                                                                                                                                String SevenAnswerSix = SevenScanSix.nextLine();
+                                                                                                                                                                                
+                                                                                                                                                                                        if(SevenAnswerSix.equals("one")){
+                                                                                                                                                                                            SevenChoiceThreeTrue SevenChoiceThreeTrueObject = new SevenChoiceThreeTrue();
+                                                                                                                                                                                            SevenChoiceThreeTrueObject.GetDifferentRoom();
+                                                                                                                                                                                        }
+                                                                                                                                                                                        else if(SevenAnswerSix.equals("two")){
+                                                                                                                                                                                            SevenChoiceThreeFalse SevenChoiceThreeFalseObject = new SevenChoiceThreeFalse();
+                                                                                                                                                                                            SevenChoiceThreeFalseObject.BecomeOutraged();
+                                                                                                                                                                                        }
 																					}
 																	}
 													}
